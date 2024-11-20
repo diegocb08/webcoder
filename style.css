@@ -1,0 +1,231 @@
+html, body {
+    font-family: sans-serif;
+    height: 100%; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+
+
+.h1-home {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 30px;
+    
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 30px;
+}
+
+
+
+.menu-list li {
+    display: inline-block;
+    list-style: none;
+    padding: 6px
+}
+
+.menu-list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* FOOTER */
+
+footer p {
+    text-align: center;
+    background-color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+
+/* HOME */
+
+
+.foto-home {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* SERVICIOS */
+
+.header-servicios { 
+    position: sticky;
+    top: 0;
+}
+
+.sobre-mi__header {
+    position: relative;
+}
+
+.servicios-contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 0 20px;
+    margin-top: 100px;
+}
+
+
+.servicio {
+    background-color: #ccc;
+
+}
+
+.servicio-img {
+    max-width: 100%;
+}
+
+.servicios-contenedor h2 {
+    text-align: center;
+}
+
+.servicio p {
+    padding: 20px;
+}
+
+/* PORTFOLIO */
+
+
+
+.portfolio-header {
+    position: sticky;
+    top: 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-h2 {
+    text-align: center;
+}
+
+.portfolio-img {
+    max-width: 80%;
+}
+
+/* SOBRE MI */
+
+
+.sobre-mi__body {
+    justify-content: space-between;
+}
+
+.sobre-mi__header {
+    position: sticky;
+    top: 0;
+}
+
+.sobre-mi__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.sobre-mi__foto__container {
+    width: 600px;
+    height: 600px;
+}
+
+.sobre-mi__foto {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: -25px;
+}
+
+.sobre-mi__texto__container {
+    width: 600px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x:auto;
+}
+
+/* CONTACTO */
+
+.form {
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 55px #fff2;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+
+.header-contacto {
+    position: sticky;
+    top: 0;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-family: sans-serif;
+    
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: black
+}
+
+label{
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+legend {
+    padding: 0 6px;
+    font-weight: bold;
+}
+
+fieldset{
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.button {
+    background-color: #ffffff;
+}
+
