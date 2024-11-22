@@ -9,7 +9,6 @@ body {
     display: flex; 
     flex-direction: column; 
     min-height: 100vh; 
-    justify-content: space-between;
 }
 
 
@@ -70,13 +69,23 @@ footer p {
 
 /* HOME */
 
-
-.foto-home {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
+.home-main {
+    position: relative;
+    margin-top: 10vh;
 }
+
+.c-item {
+    height: 80vh;
+
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
 
 /* SERVICIOS */
 
