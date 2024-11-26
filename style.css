@@ -80,7 +80,8 @@ ul {
 .menu-list li {
     display: inline-block;
     list-style: none;
-    padding: 6px
+    padding: 6px;
+    
 }
 
 .menu-list li a {
@@ -115,8 +116,22 @@ footer p {
 .c-img {
     height: 100%;
     object-fit:cover;
+    z-index: -1;
 }
 
+@media (max-width: 1067px) {
+    .home-main {
+        margin-top: 10vh;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 627px) {
+    .home-main {
+        margin-top: 18vh;
+        overflow: hidden;
+    }
+}
 
 
 
@@ -212,6 +227,7 @@ footer p {
 .portfolio-contenedor img {
     max-width: 480px;
 }
+
 
 /* SOBRE MI */
 
