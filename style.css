@@ -231,7 +231,7 @@ footer p {
        object-position: -150px;
   }
   .sobre-mi__texto__container {
-    max-width: 100vw;
+    max-width: 97vw;
     height: 600px;
     overflow-y: scroll;
     overflow-x: auto;
