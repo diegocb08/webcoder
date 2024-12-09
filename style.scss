@@ -1,0 +1,309 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin: 30px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+    &-home{
+        @extend.header;
+    }
+}
+
+
+.menu {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 30px;
+    &-home {
+        @extend.menu;
+    }
+    &-list {
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 6px;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
+}
+/* FOOTER */
+
+footer {
+    p {
+    text-align: center;
+    background-color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}}
+
+
+/* HOME */
+
+.home-main {
+    margin-top: 7vh;
+    overflow: hidden;
+}
+
+.c-item {
+    height: 95vh;
+    z-index: -1;
+}
+
+.c-img {
+    height: 100%;
+    object-fit:cover;
+}
+
+
+
+
+/* SERVICIOS */
+
+.header-servicios { 
+    position: sticky;
+    top: 0;
+}
+
+.sobre-mi__header {
+    position: relative;
+}
+
+.servicios-contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 0 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 500px) {
+            flex-direction: column;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            align-content: center;
+    }
+}
+
+.servicio {
+    background-color: #ccc;
+    min-width: 400px;
+    max-width: 30%;
+    &-img {max-width: 100%;}
+    h2 {
+        text-align: center;
+    }
+    p {
+        padding: 20px;
+        text-wrap: pretty;
+    }
+    @media (max-width: 500px) {
+    background-color: #ccc;
+    min-width: 400px;
+    max-width: 100%;
+}
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px,1fr));
+    gap: 20px;
+    justify-items: center;    
+    &-body {
+        height: auto;
+    }
+    &-header {
+        position:sticky;
+        top: 0px;
+    }
+    &-h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        background-color: #777777;
+        padding: 20px;
+    }
+    &-contenedor {
+        margin-bottom: 10px;
+        img {
+            max-width: 480px;
+        }
+    }
+}
+
+/* SOBRE MI */
+
+
+.sobre-mi__body {
+    justify-content: space-between;
+}
+
+.sobre-mi__header {
+    position: sticky;
+    top: 0;
+}
+
+.sobre-mi__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.sobre-mi__foto__container {
+    width: 600px;
+    height: 600px;
+}
+
+.sobre-mi__foto {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: -25px;
+}
+
+.sobre-mi__texto__container {
+    width: 600px;
+    min-width: 400px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x:auto;
+}
+
+@media (max-width: 500px) {
+    .sobre-mi__contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .sobre-mi__foto__container {
+        min-width: 400px;
+        min-height: 600px;
+    }
+    
+    .sobre-mi__foto {
+        min-width: 400px;
+        min-height: 600px;
+        object-fit: cover;
+        object-position: -150px;
+    }
+    
+    .sobre-mi__texto__container {
+        width: 600px;
+        height: 600px;
+        overflow-y: scroll;
+        overflow-x:auto;
+    }
+
+}
+
+/* CONTACTO */
+
+.form {
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 55px #fff2;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+
+.header-contacto {
+    position: sticky;
+    top: 0;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-family: sans-serif;
+    
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: black
+}
+
+label{
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+legend {
+    padding: 0 6px;
+    font-weight: bold;
+}
+
+fieldset{
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.button {
+    background-color: #ffffff;
+}
+
