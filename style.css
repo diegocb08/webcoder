@@ -122,6 +122,10 @@ footer p {
   min-width: 400px;
   max-width: 30%;
 }
+.servicio:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+}
 .servicio-img {
   max-width: 100%;
 }

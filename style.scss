@@ -132,12 +132,17 @@ footer {
             margin-bottom: 15px;
             align-content: center;
     }
+
 }
 
 .servicio {
     background-color: #ccc;
     min-width: 400px;
     max-width: 30%;
+    &:hover {
+        transform: scale(1.05,1.05);
+        transition: .5s;
+    }
     &-img {max-width: 100%;}
     h2 {
         text-align: center;
@@ -178,6 +183,7 @@ footer {
         margin-bottom: 10px;
         img {
             max-width: 480px;
+            
         }
     }
 }
