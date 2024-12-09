@@ -46,7 +46,7 @@ ul {
 }
 
 
-.header, {
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +63,7 @@ ul {
     display: flex;
     font-size: 1rem;
     margin-right: 30px;
-    &-list, {
+    &-list {
         li {
             display: inline-block;
             list-style: none;
@@ -231,19 +231,19 @@ footer {
     }
     
     .sobre-mi__foto__container {
-        min-width: 400px;
-        min-height: 600px;
+        max-width: 100%;
+        max-height: auto;
     }
     
     .sobre-mi__foto {
-        min-width: 400px;
+        max-width: 100%;
         min-height: 600px;
         object-fit: cover;
         object-position: -150px;
     }
     
     .sobre-mi__texto__container {
-        width: 600px;
+        max-width: 100vw;
         height: 600px;
         overflow-y: scroll;
         overflow-x:auto;
