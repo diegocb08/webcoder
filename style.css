@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: normal;
 }
 
 /* HEADER */
@@ -47,7 +48,7 @@ ul {
   position: fixed;
   width: 100%;
 }
-.menu, .menu-home {
+.menu {
   display: flex;
   font-size: 1rem;
   margin-right: 30px;

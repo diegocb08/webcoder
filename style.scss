@@ -9,6 +9,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
+    line-height: normal;
 }
 
 
@@ -45,7 +46,7 @@ ul {
 }
 
 
-.header {
+.header, {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,10 +63,7 @@ ul {
     display: flex;
     font-size: 1rem;
     margin-right: 30px;
-    &-home {
-        @extend.menu;
-    }
-    &-list {
+    &-list, {
         li {
             display: inline-block;
             list-style: none;
