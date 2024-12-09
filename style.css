@@ -50,6 +50,7 @@ ul {
   background-color: #eee;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .menu {
   display: flex;
@@ -61,17 +62,15 @@ ul {
   list-style: none;
   padding: 6px;
 }
-.menu-list li:hover {
-  transform: scale(1.05);
-  font-weight: bold;
-}
-.menu-list li a {
+.menu-list a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
-.menu-list li a:hover {
+.menu-list a:hover {
   color: #007bff;
+  font-weight: bold;
+  transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -85,13 +84,11 @@ footer p {
 
 /* HOME */
 .home-main {
-  margin-top: 7vh;
   overflow: hidden;
 }
 
 .c-item {
-  height: 95vh;
-  z-index: -1;
+  height: 100vh;
 }
 
 .c-img {

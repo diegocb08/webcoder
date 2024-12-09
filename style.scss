@@ -59,6 +59,7 @@ ul {
     &-home{
         @extend.header;
     }
+    z-index:1;
 }
 
 
@@ -71,20 +72,19 @@ ul {
             display: inline-block;
             list-style: none;
             padding: 6px;
-            &:hover{
-                transform: scale(1.05);
-                font-weight: bold;
-                
             }
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: black;
-                &:hover {color:#007bff;}
+                &:hover {color:#007bff;
+                    font-weight: bold;
+                    transform: scale(1.05);
+                }
+                
             }
         }
     }
-}
 /* FOOTER */
 
 footer {
@@ -99,14 +99,16 @@ footer {
 
 /* HOME */
 
+
+
+
+
 .home-main {
-    margin-top: 7vh;
     overflow: hidden;
 }
 
 .c-item {
-    height: 95vh;
-    z-index: -1;
+    height: 100vh;
 }
 
 .c-img {
