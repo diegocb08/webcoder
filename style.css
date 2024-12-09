@@ -32,6 +32,11 @@ h1 a {
 h1 a:hover {
   color: #007bff;
 }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
 ul {
   display: block;
@@ -159,8 +164,30 @@ footer p {
   gap: 20px;
   justify-items: center;
 }
+.portfolio img {
+  max-width: 480px;
+}
+@media (max-width: 480px) {
+  .portfolio img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    justify-items: center;
+    margin: auto;
+  }
+}
 .portfolio-body {
   height: auto;
+}
+@media (max-width: 480px) {
+  .portfolio-body {
+    max-width: 480px;
+    min-width: 400px;
+  }
 }
 .portfolio-header {
   position: sticky;
@@ -175,9 +202,6 @@ footer p {
 }
 .portfolio-contenedor {
   margin-bottom: 10px;
-}
-.portfolio-contenedor img {
-  max-width: 480px;
 }
 
 /* SOBRE MI */
