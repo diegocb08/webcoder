@@ -1,3 +1,7 @@
+@import 'mixins';
+$background-color: #eee;
+
+
 html, body {
     font-family: sans-serif;
     margin: 0;
@@ -53,21 +57,16 @@ ul {
 
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #eee;
+    @include flex-container(row, space-between, center);
+    background-color: $background-color;
     position: fixed;
     width: 100%;
-    &-home{
-        @extend.header;
-    }
     z-index:2;
 }
 
 
 .menu {
-    display: flex;
+    @include flex-container(row);
     font-size: 1rem;
     margin-right: 30px;
     &-list {
@@ -93,7 +92,7 @@ ul {
 footer {
     p {
     text-align: center;
-    background-color: #ccc;
+    background-color: $background-color;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
@@ -126,8 +125,7 @@ footer {
 /* SERVICIOS */
 
 .header-servicios { 
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 .sobre-mi__header {
@@ -135,30 +133,37 @@ footer {
 }
 
 .servicios-contenedor {
-    display: flex;
+    @include flex-container(row, center, stretch);
     gap: 20px;
     padding: 10px 20px 0 20px;
-    margin-top: 100px;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     @media (max-width: 500px) {
-            flex-direction: column;
+            @include flex-container(column, center, flex-start);
             margin-top: 15px;
             margin-bottom: 15px;
-            align-content: center;
     }
 
 }
 
 .servicio {
-    background-color: #ccc;
-    min-width: 400px;
+    display: grid;
+    grid-template-rows: minmax(min-content, 2fr) minmax(auto, 1fr);
+    align-items: stretch;
+    background-color: $background-color;
+    min-width: 500px;
     max-width: 30%;
     &:hover {
         transform: scale(1.05,1.05);
         transition: .5s;
     }
-    &-img {max-width: 100%;}
+    &-img, &-video {
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
     h2 {
         text-align: center;
     }
@@ -167,11 +172,11 @@ footer {
         text-wrap: pretty;
     }
     @media (max-width: 500px) {
-    background-color: #ccc;
     min-width: 400px;
     max-width: 100%;
 }
 }
+
 
 /* PORTFOLIO */
 
@@ -201,22 +206,28 @@ footer {
         }  
     }
     &-header {
-        position:sticky;
-        top: 0px;
+        @include sticky-header;
     }
     &-h2 {
-        color: #fff;
+        color: #000000;
         text-align: center;
         font-size: 2rem;
-        background-color: #777777;
+        background-color: $background-color;
         padding: 20px;
     }
     &-contenedor {
+<<<<<<< HEAD
         margin-bottom: 10px;  
         
     }
+=======
+        margin-bottom: 10px;
+        img {
+            max-width: 480px;
+        }
+    }   
+>>>>>>> pruebas
 }
-
 /* SOBRE MI */
 
 
@@ -225,13 +236,11 @@ footer {
 }
 
 .sobre-mi__header {
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 .sobre-mi__contenedor {
-    display: flex;
-    justify-content: center;
+    @include flex-container(row, center, flex-start);
     gap: 20px;
     flex-wrap: wrap;
     
@@ -258,11 +267,10 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .sobre-mi__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+  
+
+  .sobre-mi__contenedor {
+        @include flex-container(column, center, flex-start);
     }
     
     .sobre-mi__foto__container {
@@ -300,8 +308,7 @@ footer {
 }
 
 .header-contacto {
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 textarea {
@@ -322,6 +329,7 @@ input, textarea{
     color: black;
     &:hover {
         outline: 3px solid #666;
+        color: #fff;
     }
 }
 
@@ -337,7 +345,7 @@ legend {
 
 fieldset{
     border-radius: 10px;
-    background-color: #eee;
+    background-color: $background-color;
 }
 
 .button {
