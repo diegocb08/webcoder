@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 html, body {
     font-family: sans-serif;
     margin: 0;
@@ -50,21 +53,16 @@ ul {
 
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-container(row, space-between, center);
     background-color: #eee;
     position: fixed;
     width: 100%;
-    &-home{
-        @extend.header;
-    }
     z-index:2;
 }
 
 
 .menu {
-    display: flex;
+    @include flex-container(row);
     font-size: 1rem;
     margin-right: 30px;
     &-list {
@@ -123,8 +121,7 @@ footer {
 /* SERVICIOS */
 
 .header-servicios { 
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 .sobre-mi__header {
@@ -132,17 +129,16 @@ footer {
 }
 
 .servicios-contenedor {
-    display: flex;
+    @include flex-container(row, center, flex-start);
     gap: 20px;
     padding: 10px 20px 0 20px;
     margin-top: 100px;
     flex-wrap: wrap;
     justify-content: center;
     @media (max-width: 500px) {
-            flex-direction: column;
+            @include flex-container(column, center, flex-start);
             margin-top: 15px;
             margin-bottom: 15px;
-            align-content: center;
     }
 
 }
@@ -181,8 +177,7 @@ footer {
         height: auto;
     }
     &-header {
-        position:sticky;
-        top: 0px;
+        @include sticky-header;
     }
     &-h2 {
         color: #fff;
@@ -208,13 +203,11 @@ footer {
 }
 
 .sobre-mi__header {
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 .sobre-mi__contenedor {
-    display: flex;
-    justify-content: center;
+    @include flex-container(row, center, flex-start);
     gap: 20px;
     flex-wrap: wrap;
     
@@ -242,10 +235,7 @@ footer {
 
 @media (max-width: 500px) {
     .sobre-mi__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+        @include flex-container(column, center, flex-start);
     }
     
     .sobre-mi__foto__container {
@@ -283,8 +273,7 @@ footer {
 }
 
 .header-contacto {
-    position: sticky;
-    top: 0;
+    @include sticky-header;
 }
 
 textarea {
