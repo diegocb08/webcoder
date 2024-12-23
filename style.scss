@@ -135,14 +135,16 @@ footer {
 .servicios-contenedor {
     @include flex-container(row, center, stretch);
     gap: 20px;
-    padding: 10px 20px 0 20px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
+    
     @media (max-width: 500px) {
             @include flex-container(column, center, flex-start);
             margin-top: 15px;
             margin-bottom: 15px;
+            overflow: hidden;
+            padding: 0px;
     }
 
 }

@@ -124,7 +124,6 @@ footer p {
   justify-content: center;
   align-items: stretch;
   gap: 20px;
-  padding: 10px 20px 0 20px;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
@@ -137,6 +136,8 @@ footer p {
     align-items: flex-start;
     margin-top: 15px;
     margin-bottom: 15px;
+    overflow: hidden;
+    padding: 0px;
   }
 }
 
