@@ -140,7 +140,7 @@ footer {
     justify-content: center;
     
     @media (max-width: 500px) {
-            @include flex-container(column, center, flex-start);
+            @include flex-container(column, center, stretch);
             margin-top: 15px;
             margin-bottom: 15px;
             padding: 0px;
