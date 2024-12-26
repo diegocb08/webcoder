@@ -97,6 +97,7 @@ footer {
     padding: 25px;
     @media (max-width: 500px) {
         background: $background-color;
+        padding: 0 25px;
     }
 }
 
@@ -104,6 +105,7 @@ footer {
     @include flex-container(row, start, baseline);
     @media (max-width: 500px) {
         @include flex-container(row, start, stretch);
+        padding: 20px 25px 0px 25px;
     }
 }
 

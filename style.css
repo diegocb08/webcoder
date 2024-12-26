@@ -97,6 +97,7 @@ footer {
 @media (max-width: 500px) {
   footer {
     background: #eee;
+    padding: 0 25px;
   }
 }
 
@@ -112,6 +113,7 @@ footer {
     flex-direction: row;
     justify-content: start;
     align-items: stretch;
+    padding: 20px 25px 0px 25px;
   }
 }
 
