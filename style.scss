@@ -90,13 +90,27 @@ ul {
 /* FOOTER */
 
 footer {
-    p {
+    @include flex-container(row, start, center);
+    gap: 30px;
     text-align: center;
-    background-color: $background-color;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
-}}
+    background: linear-gradient(to right,  $background-color , #fff 70%);
+    padding: 25px;
+    @media (max-width: 500px) {
+        background: $background-color;
+    }
+}
+
+.footer-home {
+    @include flex-container(row, start, baseline);
+    @media (max-width: 500px) {
+        @include flex-container(row, start, stretch);
+    }
+}
+
+
+.footer-instagram {
+    width: 32px;
+}
 
 
 /* HOME */
