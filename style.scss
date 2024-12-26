@@ -269,7 +269,8 @@ footer {
     min-width: 400px;
     height: 600px;
     overflow-y: scroll;
-    overflow-x:auto;
+    text-wrap: pretty;
+    
 }
 
 @media (max-width: 500px) {
@@ -296,6 +297,7 @@ footer {
         height: 600px;
         overflow-y: scroll;
         overflow-x:auto;
+        padding-left: 10px;
     }
 
 }
