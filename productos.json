@@ -77,11 +77,11 @@
 		"imagenUrl": "imagenes/agua.jpeg"
 	},
 	{
-		"nombre": "Alfajor Triple",
-		"precio": 1800,
+		"nombre": "Alfajor Premium",
+		"precio": 2150,
 		"stock": 3,
 		"id": 12,
-		"imagenUrl": "imagenes/alfajor.jpeg"
+		"imagenUrl": "imagenes/alfajor-premium.jpeg"
 	},
 	{
 		"nombre": "Gaseosa Light",
@@ -95,13 +95,13 @@
 		"precio": 1000,
 		"stock": 8,
 		"id": 14,
-		"imagenUrl": "imagenes/galletas.jpeg"
+		"imagenUrl": "imagenes/galletas-integrales.jpeg"
 	},
 	{
 		"nombre": "Chocolate Blanco",
 		"precio": 2300,
 		"stock": 6,
 		"id": 15,
-		"imagenUrl": "imagenes/chocolate.jpeg"
+		"imagenUrl": "imagenes/chocolate-blanco.jpeg"
 	}
 ]
