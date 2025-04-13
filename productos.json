@@ -28,7 +28,7 @@
 		"imagenUrl": "imagenes/vino.jpeg"
 	},
 	{
-		"nombre": "Café",
+		"nombre": "Cafe",
 		"precio": 2000,
 		"stock": 3,
 		"id": 5,
@@ -63,10 +63,45 @@
 		"imagenUrl": "imagenes/chocolate.jpeg"
 	},
 	{
-		"nombre": "Té",
+		"nombre": "Te",
 		"precio": 1300,
 		"stock": 9,
 		"id": 10,
 		"imagenUrl": "imagenes/te.jpeg"
+	},
+	{
+		"nombre": "Agua con Gas",
+		"precio": 1100,
+		"stock": 4,
+		"id": 11,
+		"imagenUrl": "imagenes/agua.jpeg"
+	},
+	{
+		"nombre": "Alfajor Triple",
+		"precio": 1800,
+		"stock": 3,
+		"id": 12,
+		"imagenUrl": "imagenes/alfajor.jpeg"
+	},
+	{
+		"nombre": "Gaseosa Light",
+		"precio": 1300,
+		"stock": 5,
+		"id": 13,
+		"imagenUrl": "imagenes/gaseosa.jpeg"
+	},
+	{
+		"nombre": "Galletas Integrales",
+		"precio": 1000,
+		"stock": 8,
+		"id": 14,
+		"imagenUrl": "imagenes/galletas.jpeg"
+	},
+	{
+		"nombre": "Chocolate Blanco",
+		"precio": 2300,
+		"stock": 6,
+		"id": 15,
+		"imagenUrl": "imagenes/chocolate.jpeg"
 	}
 ]
