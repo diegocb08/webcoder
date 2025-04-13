@@ -103,5 +103,12 @@
 		"stock": 6,
 		"id": 15,
 		"imagenUrl": "imagenes/chocolate-blanco.jpeg"
+	},
+	{
+		"nombre": "Vino Blanco",
+		"precio": 4500,
+		"stock": 5,
+		"id": 16,
+		"imagenUrl": "imagenes/vino-blanco.jpeg"
 	}
 ]
